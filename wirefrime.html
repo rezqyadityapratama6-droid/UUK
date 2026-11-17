@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Toko Online</title>
+    <link rel="stylesheet" href="wirefrime.css">
+</head>
+<body>
+
+    <header>
+        <h1>ABADI NAN JAYA</h1>
+    </header>
+
+    <section class="produk">
+        <article class="produk">
+            <img src="img/katalok 1.jpe" alt="Sepatu Kasuals">
+            <h3>Sepatu</h3>
+            <p>Rp 5.000.000</p>
+        </article>
+        <article class="produk">
+          <img src="img/download (1).jpe" alt="gas?">
+            <h3>LPG 3 KG</h3>
+            <p>Rp 75.000</p>
+        </article>
+        <article class="produk">
+           <img src="img/katalog 3.jpe" alt="Japota">
+            <h3> IPHONE 18 PRO MAX 2TB</h3>
+            <p>Rp 10.000</p>
+        </article>
+    </section>
+
+    <form id="formPesan" action="#" method="get">
+        <h2>FORM PEMESANAN</h2>
+        
+        <div class="form-group">
+            <label for="nama">Nama Pemesan:</label>
+            <input type="text     " id="nama" name="nama" required minlength="3" maxlength="50">
+        </div>
+
+        <div class="form-group">
+            <label for="hp">Nomor HP:</label>
+            <input type="tel" id="hp" name="hp" required pattern="[0-9]{10,13}" title="Isi 10 sampai 13 angka">
+        </div>
+
+        <div class="form-group">
+            <label for="produk">Produk:</label>
+            <select id="produk" name="produk" required>
+                <option value=""> Pilih </option>
+                <option value="Produk A"> Sepatu</option>
+                <option value="Produk B">LPG 3 KG</option>
+                <option value="Produk C"> IPHONE 18 PRO MAX 2TB</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" required min="1" max="20">
+        </div>
+
+        <div class="form-group">
+            <label>Metode Bayar:</label>
+            <div class="radio-group">
+                <input type="radio" id="transfer" name="bayar" value="Transfer" required>
+                <label for="transfer" class="radio-label">Transfer</label>
+                
+                <input type="radio" id="cod" name="bayar" value="COD" required>
+                <label for="cod" class="radio-label">COD</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" required minlength="10" maxlength="200"></textarea>
+        </div>
+
+        <button type="submit">Pesan</button>
+    </form>
+
+    <footer>
+        08883463348-Rezqy Aditya
+    </footer>
+
+</body>
+</html>
